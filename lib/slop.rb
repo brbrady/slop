@@ -1,9 +1,4 @@
-require 'slop/option'
-require 'slop/options'
-require 'slop/parser'
-require 'slop/result'
-require 'slop/types'
-require 'slop/error'
+Dir[File.join("#{File.dirname(__FILE__)}/slop/*.rb")].each {|file| require file }
 
 module Slop
   VERSION = '4.2.0'
